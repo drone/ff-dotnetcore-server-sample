@@ -52,7 +52,7 @@ namespace HarnesSDKSample
             while (true)
             {
 
-                cfClient = await CfClient.getInstance();
+                cfClient = CfClient.getInstance();
 
                 Console.WriteLine("Bool Variation Calculation Comamnd Start ============== " + boolflagname);
                 bool result = await cfClient.boolVariation(boolflagname, target, false);
